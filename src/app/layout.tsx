@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Discover Our Products | Metta Muse",
   description:
-    "Explore sustainable handcrafted products including bags, toys, and accessories.",
+    "Explore sustainable products including bags, cloths, and accessories.",
 };
 
 export default function RootLayout({

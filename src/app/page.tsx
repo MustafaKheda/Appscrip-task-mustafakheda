@@ -10,11 +10,23 @@ interface Product {
 
 async function fetchProducts(): Promise<Product[]> {
   const res = await fetch("https://fakestoreapi.com/products", {
-    // Force SSR and fresh data (Next.js 15)
     cache: "no-store",
+    next: { revalidate: 0 },
   });
 
-  return res.json();
+  // Handle API failure (HTML returned instead of JSON)
+  if (!res.ok) {
+    const errorText = await res.text(); // This will show the HTML returned
+    console.error("FakeStore API ERROR:", errorText);
+    return []; // return empty array instead of crashing SSR
+  }
+
+  try {
+    return await res.json();
+  } catch (e) {
+    console.error("JSON PARSE ERROR:", e);
+    return [];
+  }
 }
 
 export default async function Home() {

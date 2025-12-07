@@ -46,7 +46,7 @@ export default function ProductCard({
                     <p className="pricing-text">
                         Sign in or Create an account to see pricing
                     </p>
-                    <button className="wishlist-btn"> <img src="/icons/heart.svg" alt="Wishlist" style={{
+                    <button className="wishlist-btn"> <img src="/Icons/heart.svg" alt="Wishlist" style={{
                         width: 16,
                         height: 16,
                     }} />

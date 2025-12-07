@@ -10,8 +10,6 @@ interface Product {
 }
 
 export default async function Home() {
-
-
   return (
     <main className="page">
       {/* HERO SECTION */}

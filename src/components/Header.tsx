@@ -14,13 +14,13 @@ export default function Header() {
         {/* LEFT LOGO ICON */}
         <div className="header-left">
           <img
-            src="/icons/menu.svg"
+            src="/Icons/menu.svg"
             alt="Menu"
             className="icon mobile-only"
             onClick={() => setMenuOpen(true)}
           />
           <img
-            src="/icons/logo.svg"
+            src="/Icons/logo.svg"
             alt="Logo icon"
             className="header-icon-logo"
           />
@@ -33,10 +33,10 @@ export default function Header() {
 
         {/* RIGHT ICONS */}
         <div className="header-right">
-          <img src="/icons/search.svg" alt="Search" className="icon" />
-          <img src="/icons/heart.svg" alt="Wishlist" className="icon" />
-          <img src="/icons/bag.svg" alt="Bag" className="icon " />
-          <img src="/icons/profile.svg" alt="User account" className="icon desktop-only" />
+          <img src="/Icons/search.svg" alt="Search" className="icon" />
+          <img src="/Icons/heart.svg" alt="Wishlist" className="icon" />
+          <img src="/Icons/bag.svg" alt="Bag" className="icon " />
+          <img src="/Icons/profile.svg" alt="User account" className="icon desktop-only" />
 
           <div className="lang-selector menu-button desktop-only">
             ENG <span className="menu-arrow"><ArrowIcon /></span>

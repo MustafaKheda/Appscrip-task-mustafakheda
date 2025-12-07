@@ -107,7 +107,7 @@ export default function Footer() {
 
                     <div className={`footer-links social-links ${open === "follow" ? "open" : ""}`}>
                         <div className="social-icons">
-                            <Image src="/images/instagram.png" width={26} height={26} alt="instagram" />
+                            <Image src="/images/Instagram.png" width={26} height={26} alt="instagram" />
                             <Image src="/images/linkedin.png" width={26} height={26} alt="linkedin" />
                         </div>
                     </div>

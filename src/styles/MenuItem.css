@@ -1,0 +1,53 @@
+.menu-item-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-button {
+  background: #fff;
+  border: 0px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s ease;
+}
+
+.menu-arrow {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.menu-arrow.open {
+  transform: rotate(-90deg);
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  text-align: right;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  min-width: 160px;
+  box-shadow:
+    0px 2px 8px rgba(0, 0, 0, 0.08),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.04) inset;
+
+  padding: 10px 0;
+  z-index: 20;
+}
+
+.dropdown-item {
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-item.active {
+  font-weight: 700;
+}

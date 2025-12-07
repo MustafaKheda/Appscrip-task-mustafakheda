@@ -1,0 +1,95 @@
+.filter-drawer {
+    width: 0;
+    min-width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, min-width 0.3s ease;
+}
+
+.filter-drawer.open {
+    width: 300px;
+    min-width: 300px;
+    overflow-y: auto;
+}
+
+.filter-content {
+    padding-right: 16px;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter-divider {
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    margin: 16px 0;
+}
+
+.filter-section {
+    margin-top: 10px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    transform: rotate(-90deg);
+    transition: transform 0.2s ease;
+
+}
+
+.arrow.open {
+    transform: rotate(90deg);
+}
+
+
+.all-tag {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.unselect {
+    border: none;
+    background: none;
+    color: #BFC8CD;
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.checkbox-row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    .filter-drawer{
+        padding: 1rem ;
+    }
+   .filter-content{
+        padding-right: 0;   
+   }
+   .filter-drawer.open {
+        width: 250px;
+        min-width: 250px;
+   }
+}
